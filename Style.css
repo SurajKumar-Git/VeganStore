@@ -1,0 +1,775 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -------------------------------------------Header ----------------------------------------- */
+
+.navbar {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: 77px;
+    position: fixed;
+    align-items: center;
+    padding: 0 28px;
+    justify-content: space-between;
+   
+}
+
+.logo {
+    width: 40px;
+}
+
+
+.right-menu a{
+    display: inline-block;
+    margin-right: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.right-menu button{
+    display: inline-block;
+    margin-right: 24px;
+    background-color: #aad236;
+    padding: 9px 34px;
+    border: 0 ;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;  
+    font-family: inherit;
+}
+
+
+
+/* -----------------------------Drop Down------------------------ */
+
+.DropDown {
+    position: relative;
+}
+
+.DropDown:hover  .drop-down-menu {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    display: block;
+}
+
+hr {
+    color: #ccc;
+}
+
+.drop-down-menu{
+    list-style-type: none;
+    box-shadow: 0 2px 5px #ccc;
+    width: 180px;
+    padding: 20px;
+    border-top: 2px solid #aad236;
+    display: none;
+    background-color: #fff;
+}
+
+.drop-down-menu li{
+    padding: 0 4px;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+
+/* --------------------------------------Landing Image section --------------------------------*/
+
+#Main_Section {
+    width: 100%;
+    height: 100%;
+}
+
+#Landing_Page {
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+
+/* -----------------Landing page text ------------------------------*/
+
+#Text {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+#Text h1{
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+}
+
+#Text p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    padding-top: 32px;
+} 
+
+/* ----------------------------------------------Section 2 ------------------------------------- */
+
+#Step_Container {
+    display: flex;
+    flex-basis: 25%;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+} 
+
+/* -------------------- Container items------------------------------------- */
+#Step_Container div {
+    flex-basis: 25%;
+    padding: 112px 48px;
+}
+
+#Step_Item1 {
+    background-color: #5acda6;
+}
+
+#Step_Item2 {
+    background-color: #91ac41;
+}
+
+#Step_Item3 {
+    background-color: #e4b476;
+}
+
+#Step_Item4 {
+    background-color: #f69dad;
+}
+
+/* ---------------------icon------------------------------- */
+
+
+.Step_Icon {
+    font-size: 96px;
+    transition: 1s transform;
+}
+
+#Step_Container div:hover .Step_Icon{
+    transform: scale(1.25);
+}
+
+#Step_Container div h3 {
+    font-size: 24px;
+    font-weight: 600; 
+}
+
+#Step_Container div p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+
+/* ------------------------------------------Section 3-------------------------------------- */
+
+#Store_Section{
+    text-align: center;  
+    background-color: #f7eee2;
+    width: 100%;
+    padding: 75px 0;
+
+}
+
+
+#Store_Heading h4{
+    color: #91ac41;
+    font-size: 24px;
+    margin: 0;
+    margin-top: 35px;
+    font-family: 'Caveat', cursive;
+
+}
+
+#Store_Heading h2 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+#Store_Heading p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin: 0;
+    margin-bottom: 55px;
+}
+
+#Store_Content {
+    display: flex;
+    width: 70%; 
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Content {
+    width: 25%;
+    padding: 24px;
+}
+
+.Store_Icon {
+    display: inline-block; 
+    background-color: #e3b375;
+    padding: 40px;
+    border-radius: 50%;
+    transition: .5s transform;
+}
+
+.Store_Icon i{
+    color: white;
+    font-size: 60px;
+}
+
+.Store_Icon:hover {
+    transform: scale(1.1);
+}
+
+.Content h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Content p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+
+
+/* ----------------------------------------------section 4-------------------------------------- */
+
+#Testimonial_Section {
+    text-align: center;  
+    width: 100%;
+    padding: 75px 0;
+
+}
+
+
+#Testimonial_Heading h4{
+    color: #91ac41;
+    font-size: 24px;
+    margin-top: 35px;
+    font-family: 'Caveat', cursive;
+
+}
+
+#Testimonial_Heading h2 {
+    font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+#Testimonial_Heading p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+   
+}
+
+#Testimonial_Content {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Testimonial_Content_Box {
+    background-color: #f5f6fb;
+    width: 30%;
+    margin: 16px;
+    padding: 40px 30px;
+    border-radius: 45px 0 45px 45px;
+    transition: box-shadow 0.3s;
+}
+
+.Testimonial_Content_Box:hover {
+    box-shadow: 1px 10px 15px 1px rgb(226, 223, 223);
+}
+
+.Testimonial_Content_Box img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.Testimonial_Content_Box .Message {
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+}
+
+.Testimonial_Content_Box h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.Testimonial_Content_Box .Profession {
+    margin: 0;
+    color: #8b8b99;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+} 
+
+
+
+/* ---------------------------------------------Section-5 ---------------------------------------- */
+
+#Follow_Us {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#FollowUsImage {
+    width: 67%;
+}
+
+#FollowUsImage img {
+    width: 100%;
+    height: 100%;
+}
+
+#Follow_Us_BG {
+
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 33%;
+}
+
+
+#FollowUs_Content {
+    margin: 23%;
+}
+
+#FollowUs_Content h2{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+#FollowUs_Content p{
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+}
+
+#Subscribe {
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: #fff;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    font-family: inherit;
+}
+
+#Subscribe_Btn {
+    background-color: #f69dad;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #f69dad;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 16px;
+    font-family: inherit;
+}
+
+#Subscribe_Btn:hover{
+    background-color: transparent;
+    color: #f69dad;
+    font-family: inherit;
+}
+
+
+/* -----------------------------Section 6 ------------------------------------------------ */
+
+#Stats-Section {
+    background-color: #f6fcfa;
+}
+
+#Stats-Wrapper {
+    display: flex;
+    width: 80%;
+    margin: auto 10%;
+    justify-content: space-evenly;
+    background-color: #f6fcfa;
+    padding: 100px 0;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.Stats-Item {
+    width: 25%;
+    padding: 0 64px;
+}
+
+.Stats-Item h3{
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.Stats-Item p{
+   font-size: 14px;
+   letter-spacing: 0.5px;
+   font-style: italic;
+   margin: 0;
+   color: #57e3b5; 
+}
+
+
+/* ----------------------------------------Section 7- Video Section--------------------------*/
+
+#Video_Section {
+    width: 100%;
+    text-align: center;
+}
+
+#Video_Wrapper {
+    width: 70%;
+}
+
+#Video_Heading {
+    font-size: 44px;
+    font-weight: 400;
+    color: #868699;
+    margin: 40px 0px;
+}
+
+#Video {
+    border: none;
+    width: 100%;
+    height: 425px;
+}
+
+/* -----------------------Contact Us Section ----------------------------------------------- */
+
+#ContactUs_Section {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    
+}
+
+.Sections {
+    width: 50%;
+}
+
+.ContactUs_Heading_Tag {
+    color: #91ac41;
+    font-size: 24px;
+    font-family:'Caveat', cursive;
+}
+
+.ContactUs_Heading {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.ContactUs_Content {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.Store_Location {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.Store_Location_Address {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    line-height: 2;
+}
+
+.Form_Details {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius: 6px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 16px;
+    font-family: inherit;
+}
+
+#Submit-Btn {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #aad236;
+    color: #fff;
+    padding: 9px 34px;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+
+/* ----------------------------------------Footer Section----------------------------- */
+
+#Footer_Section {
+    width: 100%;
+    background-color: #232323;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 30px 0px;
+}
+
+#Footer_Section p{
+    margin: 0;
+}
+
+/* ------------------------for Responsive Page ----------------------------------------------------- */
+
+@media only screen and (max-width:600px) {
+    /* --------------Nav Section-------------- */
+    .right-menu a {
+        display: none;
+    }
+
+    /* -----------------------Landing Page------------ */
+    #Text h1{
+        font-size: 30px;
+        letter-spacing: 4.4px;
+    }
+
+    #Text p{
+        font-size: 14px;
+    }
+
+    /* ----------------------Step Section ----------------------------- */
+    #Step_Container div {
+        flex-basis: 100%;
+    }
+
+    /* ------------------Store Section----------------------------- */
+
+    .Content {
+        width: 100%;
+    }
+
+    #Store_Heading h2 {
+        font-size: 30px;
+    }
+    
+    #Store_Heading p {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    /* ------------------Testimonial Section----------------------- */
+    .Testimonial_Content_Box {
+        width: 100%;
+    }
+
+    #Testimonial_Heading h2 {
+        font-size: 30px;
+    }
+
+    #Testimonial_Heading p {
+        font-size: 14px;   
+        padding: 0 20px;
+    }
+    
+    /* -----------------Follow Us----------------------------- */
+
+    #FollowUsImage {
+        width: 100%;
+    }
+
+    #Follow_Us_BG {
+        width: 100%;
+    }
+
+    #FollowUs_Content h2 {
+        font-size: 30px;
+    }
+
+    #FollowUs_Content p {
+        font-size: 14px;
+    }
+
+    /* --------------------------------Stats Section------------------------------- */
+    .Stats-Item {
+        width: 50%;
+        padding: 0 32px;
+    }
+
+    .Stats-Item h3{
+        font-size: 30px;
+    }
+
+    .Stats-Item p{
+        font-size: 14px;
+        padding-bottom: 20px;
+     }
+
+     /* ----------------------------Contact Us Section------------------------ */
+
+     .Sections {
+        width: 100%;
+    }
+
+    .ContactUs_Heading {
+        font-size: 30px;
+    }
+
+    .ContactUs_Content {
+        font-size: 14px;
+    }
+
+    .Store_Location {
+        font-size: 20px;
+    }
+    
+    .Store_Location_Address {
+        font-size: 14px;
+    }
+
+    .Form_Details {
+        font-size: 14px;
+    }
+
+    #Submit-Btn {
+        font-size: 14px;
+    }
+
+    /* ----------------------------Footer Section-------------------------------- */
+
+    #Footer_Section {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (min-width:600px) and (max-width: 992px){ 
+
+    /* ----------------------Landing Page--------------------------- */
+    #Text h1{
+        font-size: 33px;
+        letter-spacing: 6.6px;
+    }
+
+    /* ----------------------Step Section ----------------------------- */
+
+    #Step_Container div {
+        flex-basis:50%;
+    }
+
+     /* ------------------Store Section----------------------------- */
+
+    .Content {
+        width: 50%;
+    }
+
+    /* ------------------Testimonial Section----------------------- */
+    .Testimonial_Content_Box {
+        width: 100%;
+    }
+
+     /* -----------------Follow Us----------------------------- */
+
+     #FollowUsImage {
+        width: 35%;
+    }
+
+    #Follow_Us_BG {
+        width: 65%;
+    }
+
+    /* --------------------------------Stats Section------------------------------- */
+    .Stats-Item {
+        width: 50%;
+        padding: 0 32px;
+    }
+
+    .Stats-Item p{
+        padding-bottom: 20px;
+    }
+
+      /* ----------------------------Contact Us Section------------------------ */
+
+      .Sections {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width:992px) and (max-width: 1372px) {
+
+    /* ------------------Testimonial Section----------------------- */
+
+    #Testimonial_Content {
+        width: 80%;
+    }
+    .Testimonial_Content_Box {
+        width: 29%;
+    }
+
+    /* -----------------Follow Us----------------------------- */
+
+    #FollowUsImage {
+        width: 60%;
+    }
+
+    #Follow_Us_BG {
+        width: 40%;
+    }
+
+}
